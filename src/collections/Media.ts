@@ -1,4 +1,4 @@
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig } from 'payload';
 
 export const Media: CollectionConfig = {
   slug: 'media',
@@ -12,5 +12,10 @@ export const Media: CollectionConfig = {
       required: true,
     },
   ],
-  upload: true,
-}
+  upload: {
+    staticDir: 'media', // Папка для загрузки файлов
+    mimeTypes: ['image/png', 'image/jpeg', 'image/webp'], // Разрешенные типы файлов
+  },
+};
+
+export default Media;
