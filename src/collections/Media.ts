@@ -13,7 +13,7 @@ export const Media: CollectionConfig = {
     },
   ],
   upload: {
-    staticDir: 'media', // Папка для загрузки файлов
+    staticDir: 'media',
     mimeTypes: ['image/png', 'image/jpeg', 'image/webp'], // Разрешенные типы файлов
   },
 };
